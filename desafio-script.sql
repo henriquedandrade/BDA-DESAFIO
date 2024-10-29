@@ -71,6 +71,20 @@ insert into pedido (fkvenda, fkproduto, qtdproduto, desconto) values
 (4, 6, 5, 15.00),
 (5, 7, 1, 0.00);
 
+-- Exercico g
+select * from cliente 
+join venda
+on idCliente = fkCliente;
+
+-- Exercicio i
+select * from cliente as cli
+join cliente as ind
+on cli.fkIndicado = ind.idCliente;
+
+-- Exercicio j - Incompleto
+select ind.nome as Indicado, ind.email as Email, concat() as Endereço  from cliente as cli
+join cliente as ind
+on cli.fkIndicado = ind.idCliente;
 
 
 
@@ -79,16 +93,6 @@ insert into pedido (fkvenda, fkproduto, qtdproduto, desconto) values
 
 
 
-
-
-
-
-
-
-
-
-
-teste
 
 
 
